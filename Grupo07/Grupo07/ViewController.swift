@@ -114,8 +114,8 @@ class ViewController: UIViewController, CAAnimationDelegate {
     
     //cria o circulo e personaliza //background layer
     func drawBackLayer(){
-        pomodoro.backProgressLayer.path = UIBezierPath(arcCenter: CGPoint(x:view.frame.midX, y:view.frame.midY), radius: 100, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
-        pomodoro.backProgressLayer.strokeColor = UIColor.white.cgColor
+        pomodoro.backProgressLayer.path = UIBezierPath(arcCenter: CGPoint(x:view.frame.midX, y:view.frame.midY), radius: 120, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
+        pomodoro.backProgressLayer.strokeColor = UIColor.gray.cgColor
         pomodoro.backProgressLayer.fillColor = UIColor.clear.cgColor
         pomodoro.backProgressLayer.lineWidth = 15
             view.layer.addSublayer(pomodoro.backProgressLayer)
@@ -124,8 +124,8 @@ class ViewController: UIViewController, CAAnimationDelegate {
     //funcao cria o circulo que sobrepoe o primeiro
     //fore layer which is the animated red one
     func drawForeLayer(){
-        pomodoro.foreProgressLayer.path = UIBezierPath(arcCenter: CGPoint(x:view.frame.midX, y:view.frame.midY), radius: 100, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
-        pomodoro.foreProgressLayer.strokeColor = UIColor.red.cgColor
+        pomodoro.foreProgressLayer.path = UIBezierPath(arcCenter: CGPoint(x:view.frame.midX, y:view.frame.midY), radius: 120, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
+        pomodoro.foreProgressLayer.strokeColor = UIColor.black.cgColor
         pomodoro.foreProgressLayer.fillColor = UIColor.clear.cgColor
         pomodoro.foreProgressLayer.lineWidth = 15
             view.layer.addSublayer(pomodoro.foreProgressLayer)
