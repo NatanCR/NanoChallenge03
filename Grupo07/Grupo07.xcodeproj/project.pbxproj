@@ -14,6 +14,9 @@
 		4E3FA4CE2800C9F0004A5402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA4CD2800C9F0004A5402 /* Assets.xcassets */; };
 		4E3FA4D12800C9F0004A5402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA4CF2800C9F0004A5402 /* LaunchScreen.storyboard */; };
 		4ED779CA280F2CCE0032B178 /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED779C9280F2CCE0032B178 /* Pomodoro.swift */; };
+		A4AABBAA281099E90049C20A /* PrimeiraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBA8281099E90049C20A /* PrimeiraTableViewCell.swift */; };
+		A4AABBAB281099E90049C20A /* PrimeiraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AABBA9281099E90049C20A /* PrimeiraTableViewCell.xib */; };
+		A4AABBAE28109CBC0049C20A /* PrimeiraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBAD28109CBC0049C20A /* PrimeiraTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		4E3FA4D02800C9F0004A5402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E3FA4D22800C9F0004A5402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ED779C9280F2CCE0032B178 /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
+		A4AABBA8281099E90049C20A /* PrimeiraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiraTableViewCell.swift; sourceTree = "<group>"; };
+		A4AABBA9281099E90049C20A /* PrimeiraTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrimeiraTableViewCell.xib; sourceTree = "<group>"; };
+		A4AABBAD28109CBC0049C20A /* PrimeiraTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiraTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,35 @@
 		4E3FA4C32800C9ED004A5402 /* Grupo07 */ = {
 			isa = PBXGroup;
 			children = (
+				A4AABBAF28109CDB0049C20A /* Views */,
+				A4AABBAC28109C8E0049C20A /* Controllers */,
 				4E3FA4C42800C9ED004A5402 /* AppDelegate.swift */,
 				4E3FA4C62800C9ED004A5402 /* SceneDelegate.swift */,
-				4E3FA4C82800C9ED004A5402 /* ViewController.swift */,
-				4ED779C9280F2CCE0032B178 /* Pomodoro.swift */,
-				4E3FA4CA2800C9ED004A5402 /* Main.storyboard */,
 				4E3FA4CD2800C9F0004A5402 /* Assets.xcassets */,
 				4E3FA4CF2800C9F0004A5402 /* LaunchScreen.storyboard */,
 				4E3FA4D22800C9F0004A5402 /* Info.plist */,
 			);
 			path = Grupo07;
+			sourceTree = "<group>";
+		};
+		A4AABBAC28109C8E0049C20A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4ED779C9280F2CCE0032B178 /* Pomodoro.swift */,
+				4E3FA4C82800C9ED004A5402 /* ViewController.swift */,
+				A4AABBA8281099E90049C20A /* PrimeiraTableViewCell.swift */,
+				A4AABBAD28109CBC0049C20A /* PrimeiraTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A4AABBAF28109CDB0049C20A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A4AABBA9281099E90049C20A /* PrimeiraTableViewCell.xib */,
+				4E3FA4CA2800C9ED004A5402 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +155,7 @@
 			files = (
 				4E3FA4D12800C9F0004A5402 /* LaunchScreen.storyboard in Resources */,
 				4E3FA4CE2800C9F0004A5402 /* Assets.xcassets in Resources */,
+				A4AABBAB281099E90049C20A /* PrimeiraTableViewCell.xib in Resources */,
 				4E3FA4CC2800C9ED004A5402 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,8 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED779CA280F2CCE0032B178 /* Pomodoro.swift in Sources */,
+				A4AABBAA281099E90049C20A /* PrimeiraTableViewCell.swift in Sources */,
 				4E3FA4C92800C9ED004A5402 /* ViewController.swift in Sources */,
 				4E3FA4C52800C9ED004A5402 /* AppDelegate.swift in Sources */,
+				A4AABBAE28109CBC0049C20A /* PrimeiraTableViewController.swift in Sources */,
 				4E3FA4C72800C9ED004A5402 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
