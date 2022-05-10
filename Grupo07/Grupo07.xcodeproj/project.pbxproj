@@ -14,6 +14,7 @@
 		4E3FA4CE2800C9F0004A5402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA4CD2800C9F0004A5402 /* Assets.xcassets */; };
 		4E3FA4D12800C9F0004A5402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA4CF2800C9F0004A5402 /* LaunchScreen.storyboard */; };
 		4ED779CA280F2CCE0032B178 /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED779C9280F2CCE0032B178 /* Pomodoro.swift */; };
+		A481BFA5282AEBFD0061B8AA /* SimuladosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481BFA4282AEBFD0061B8AA /* SimuladosViewController.swift */; };
 		A4AABBAA281099E90049C20A /* PrimeiraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBA8281099E90049C20A /* PrimeiraTableViewCell.swift */; };
 		A4AABBAB281099E90049C20A /* PrimeiraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AABBA9281099E90049C20A /* PrimeiraTableViewCell.xib */; };
 		A4AABBAE28109CBC0049C20A /* PrimeiraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBAD28109CBC0049C20A /* PrimeiraTableViewController.swift */; };
@@ -29,6 +30,7 @@
 		4E3FA4D02800C9F0004A5402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E3FA4D22800C9F0004A5402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ED779C9280F2CCE0032B178 /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
+		A481BFA4282AEBFD0061B8AA /* SimuladosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimuladosViewController.swift; sourceTree = "<group>"; };
 		A4AABBA8281099E90049C20A /* PrimeiraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiraTableViewCell.swift; sourceTree = "<group>"; };
 		A4AABBA9281099E90049C20A /* PrimeiraTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrimeiraTableViewCell.xib; sourceTree = "<group>"; };
 		A4AABBAD28109CBC0049C20A /* PrimeiraTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiraTableViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				4E3FA4C82800C9ED004A5402 /* ViewController.swift */,
 				A4AABBA8281099E90049C20A /* PrimeiraTableViewCell.swift */,
 				A4AABBAD28109CBC0049C20A /* PrimeiraTableViewController.swift */,
+				A481BFA4282AEBFD0061B8AA /* SimuladosViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				4ED779CA280F2CCE0032B178 /* Pomodoro.swift in Sources */,
 				A4AABBAA281099E90049C20A /* PrimeiraTableViewCell.swift in Sources */,
 				4E3FA4C92800C9ED004A5402 /* ViewController.swift in Sources */,
+				A481BFA5282AEBFD0061B8AA /* SimuladosViewController.swift in Sources */,
 				4E3FA4C52800C9ED004A5402 /* AppDelegate.swift in Sources */,
 				A4AABBAE28109CBC0049C20A /* PrimeiraTableViewController.swift in Sources */,
 				4E3FA4C72800C9ED004A5402 /* SceneDelegate.swift in Sources */,
