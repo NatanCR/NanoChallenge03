@@ -7,9 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, CAAnimationDelegate {
+class PomodoroViewController: UIViewController, CAAnimationDelegate {
     
     let pomodoro = Pomodoro()
+    var delegate: ListaPomodorosConcluidosProtocol?
+    var materia: Materia?
 
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
@@ -20,7 +22,29 @@ class ViewController: UIViewController, CAAnimationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         drawBackLayer()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(addTapped))
+
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        //AO VOLTAR PARA A PAGINA DE HISTORICO - PASSO 1.3
+        if pomodoro.count > 0 {
+            //PASSO 2.3
+            guard let delegate = delegate else {
+                return
+            }
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+            //gera a lista de pomodoros
+            //PASSO 6.3
+            //coloca os dados nesse formato para exibir
+            delegate.inserir_pomodoro_concluido(data: "\(dateFormatter.string(from: Date()))", pomodoros: pomodoro.count)
+     
+        }
+        
+    }
+    
     
     @IBAction func startButtonTapped(_ sender: Any) {
         cancelButton.isEnabled = true
@@ -61,11 +85,13 @@ class ViewController: UIViewController, CAAnimationDelegate {
 }
     
     @objc func updateTimer(){
+        //AO INICIAR O TIMER (PASSA A CADA SEGUNDO) - PASSO 6.2
         if pomodoro.time<1{
             pomodoro.count = pomodoro.count + 1
+            //AO TERMINAR O POMODORO - PASSO 7.2
             label.text = "\(pomodoro.count)"
             cancelButton.isEnabled = false
-            cancelButton.alpha = 0.5
+            cancelButton.alpha = 0.8
             startButton.setTitle("Start", for: .normal)
             startButton.setTitleColor(UIColor.green, for: .normal)
             pomodoro.timer.invalidate()
@@ -115,7 +141,7 @@ class ViewController: UIViewController, CAAnimationDelegate {
     //cria o circulo e personaliza //background layer
     func drawBackLayer(){
         pomodoro.backProgressLayer.path = UIBezierPath(arcCenter: CGPoint(x:view.frame.midX, y:view.frame.midY), radius: 120, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
-        pomodoro.backProgressLayer.strokeColor = UIColor.gray.cgColor
+        pomodoro.backProgressLayer.strokeColor = UIColor.white.cgColor
         pomodoro.backProgressLayer.fillColor = UIColor.clear.cgColor
         pomodoro.backProgressLayer.lineWidth = 15
             view.layer.addSublayer(pomodoro.backProgressLayer)
@@ -125,9 +151,18 @@ class ViewController: UIViewController, CAAnimationDelegate {
     //fore layer which is the animated red one
     func drawForeLayer(){
         pomodoro.foreProgressLayer.path = UIBezierPath(arcCenter: CGPoint(x:view.frame.midX, y:view.frame.midY), radius: 120, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
-        pomodoro.foreProgressLayer.strokeColor = UIColor.black.cgColor
+        pomodoro.foreProgressLayer.strokeColor = CGColor(red: 0.796, green: 0.294, blue: 0.459, alpha: 1)
         pomodoro.foreProgressLayer.fillColor = UIColor.clear.cgColor
         pomodoro.foreProgressLayer.lineWidth = 15
             view.layer.addSublayer(pomodoro.foreProgressLayer)
+        
     }
+    
+    @objc func addTapped(){
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "PomodoroTableViewController") as? PomodoroTableViewController {
+            self.navigationController?.popViewController(animated: true)
+    }
+    
+    }
+    
     }

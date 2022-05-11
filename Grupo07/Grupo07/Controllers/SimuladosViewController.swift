@@ -26,11 +26,10 @@ class SimuladosViewController: UIViewController {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        myTable.reloadData()
-        
-    }
-
+    override func viewDidAppear(_ animated: Bool) {
+       
+       myTable.reloadData()
+   }
 }
 
 extension SimuladosViewController: UITableViewDelegate, UITableViewDataSource{

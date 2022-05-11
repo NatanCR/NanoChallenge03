@@ -112,7 +112,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
                                         <connections>
-                                            <segue destination="PwF-en-8tP" kind="show" id="H8q-hD-IVj"/>
+                                            <segue destination="PwF-en-8tP" kind="show" identifier="seguePomodoro" id="H8q-hD-IVj"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -216,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ag-cD-9ke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3336.2318840579715" y="-887.27678571428567"/>
+            <point key="canvasLocation" x="3477" y="-570"/>
         </scene>
         <!--Simulados-->
         <scene sceneID="twg-vf-t1h">
@@ -360,10 +360,10 @@
             </objects>
             <point key="canvasLocation" x="2859" y="-1551"/>
         </scene>
-        <!--View Controller-->
+        <!--Pomodoro View Controller-->
         <scene sceneID="AjW-sw-y1J">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="PwF-en-8tP" customClass="ViewController" customModule="Grupo07" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="PwF-en-8tP" customClass="PomodoroViewController" customModule="Grupo07" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bgp-wS-216">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -9,6 +9,9 @@ import UIKit
 
 class PomodoroTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var pomodoLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

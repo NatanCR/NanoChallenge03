@@ -40,6 +40,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dataLabel" destination="bEZ-SR-dfd" id="lZv-Tw-is0"/>
+                <outlet property="pomodoLabel" destination="XFD-Ju-Eoi" id="LVG-YZ-qjh"/>
+            </connections>
             <point key="canvasLocation" x="157.24637681159422" y="90.736607142857139"/>
         </tableViewCell>
     </objects>
