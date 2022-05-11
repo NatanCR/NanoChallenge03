@@ -50,7 +50,9 @@ class QuestoesViewController: UIViewController {
         }
         
         else if (resolveuInt) < (acertouInt){
-            
+            let alerta = UIAlertController(title: nil, message: "O número de questões acertadas não pode ser maior que as resolvidas!", preferredStyle: .alert)
+            alerta.addAction(UIAlertAction(title: "OK", style: .default, handler: {[weak self](_)in }))
+            present(alerta, animated: true, completion: nil)
             print("aqui")
         }
         
