@@ -50,6 +50,18 @@ extension PrimeiraTableViewController: UITableViewDataSource, UITableViewDelegat
     
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "PomodoroTableViewController") as? PomodoroTableViewController{
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        
+        }
+        
+    }
+    
+    
+    
     
     
 }

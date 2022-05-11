@@ -14,6 +14,9 @@
 		4E3FA4CE2800C9F0004A5402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA4CD2800C9F0004A5402 /* Assets.xcassets */; };
 		4E3FA4D12800C9F0004A5402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA4CF2800C9F0004A5402 /* LaunchScreen.storyboard */; };
 		4ED779CA280F2CCE0032B178 /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED779C9280F2CCE0032B178 /* Pomodoro.swift */; };
+		A42D7AA8282C267300BCDD84 /* PomodoroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D7AA7282C267300BCDD84 /* PomodoroTableViewController.swift */; };
+		A42D7AAB282C295A00BCDD84 /* PomodoroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D7AA9282C295A00BCDD84 /* PomodoroTableViewCell.swift */; };
+		A42D7AAC282C295A00BCDD84 /* PomodoroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42D7AAA282C295A00BCDD84 /* PomodoroTableViewCell.xib */; };
 		A481BFA5282AEBFD0061B8AA /* SimuladosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481BFA4282AEBFD0061B8AA /* SimuladosViewController.swift */; };
 		A481BFA9282B21F10061B8AA /* QuestoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481BFA8282B21F10061B8AA /* QuestoesViewController.swift */; };
 		A481BFAC282B28920061B8AA /* SimuladosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481BFAA282B28920061B8AA /* SimuladosTableViewCell.swift */; };
@@ -35,6 +38,9 @@
 		4E3FA4D02800C9F0004A5402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E3FA4D22800C9F0004A5402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ED779C9280F2CCE0032B178 /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
+		A42D7AA7282C267300BCDD84 /* PomodoroTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTableViewController.swift; sourceTree = "<group>"; };
+		A42D7AA9282C295A00BCDD84 /* PomodoroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTableViewCell.swift; sourceTree = "<group>"; };
+		A42D7AAA282C295A00BCDD84 /* PomodoroTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PomodoroTableViewCell.xib; sourceTree = "<group>"; };
 		A481BFA4282AEBFD0061B8AA /* SimuladosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimuladosViewController.swift; sourceTree = "<group>"; };
 		A481BFA8282B21F10061B8AA /* QuestoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestoesViewController.swift; sourceTree = "<group>"; };
 		A481BFAA282B28920061B8AA /* SimuladosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimuladosTableViewCell.swift; sourceTree = "<group>"; };
@@ -99,6 +105,8 @@
 				A481BFAA282B28920061B8AA /* SimuladosTableViewCell.swift */,
 				A481BFA8282B21F10061B8AA /* QuestoesViewController.swift */,
 				A481BFB2282B316B0061B8AA /* PopUpViewController.swift */,
+				A42D7AA7282C267300BCDD84 /* PomodoroTableViewController.swift */,
+				A42D7AA9282C295A00BCDD84 /* PomodoroTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -106,6 +114,7 @@
 		A4AABBAF28109CDB0049C20A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A42D7AAA282C295A00BCDD84 /* PomodoroTableViewCell.xib */,
 				A4AABBA9281099E90049C20A /* PrimeiraTableViewCell.xib */,
 				4E3FA4CA2800C9ED004A5402 /* Main.storyboard */,
 				A481BFAB282B28920061B8AA /* SimuladosTableViewCell.xib */,
@@ -171,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42D7AAC282C295A00BCDD84 /* PomodoroTableViewCell.xib in Resources */,
 				4E3FA4D12800C9F0004A5402 /* LaunchScreen.storyboard in Resources */,
 				4E3FA4CE2800C9F0004A5402 /* Assets.xcassets in Resources */,
 				A4AABBAB281099E90049C20A /* PrimeiraTableViewCell.xib in Resources */,
@@ -188,9 +198,11 @@
 			files = (
 				4ED779CA280F2CCE0032B178 /* Pomodoro.swift in Sources */,
 				A481BFAC282B28920061B8AA /* SimuladosTableViewCell.swift in Sources */,
+				A42D7AA8282C267300BCDD84 /* PomodoroTableViewController.swift in Sources */,
 				A4AABBAA281099E90049C20A /* PrimeiraTableViewCell.swift in Sources */,
 				A481BFB3282B316B0061B8AA /* PopUpViewController.swift in Sources */,
 				4E3FA4C92800C9ED004A5402 /* ViewController.swift in Sources */,
+				A42D7AAB282C295A00BCDD84 /* PomodoroTableViewCell.swift in Sources */,
 				A481BFA5282AEBFD0061B8AA /* SimuladosViewController.swift in Sources */,
 				4E3FA4C52800C9ED004A5402 /* AppDelegate.swift in Sources */,
 				A4AABBAE28109CBC0049C20A /* PrimeiraTableViewController.swift in Sources */,
