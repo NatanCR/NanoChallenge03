@@ -15,6 +15,11 @@
 		4E3FA4D12800C9F0004A5402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA4CF2800C9F0004A5402 /* LaunchScreen.storyboard */; };
 		4ED779CA280F2CCE0032B178 /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED779C9280F2CCE0032B178 /* Pomodoro.swift */; };
 		A481BFA5282AEBFD0061B8AA /* SimuladosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481BFA4282AEBFD0061B8AA /* SimuladosViewController.swift */; };
+		A481BFA9282B21F10061B8AA /* QuestoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481BFA8282B21F10061B8AA /* QuestoesViewController.swift */; };
+		A481BFAC282B28920061B8AA /* SimuladosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481BFAA282B28920061B8AA /* SimuladosTableViewCell.swift */; };
+		A481BFAD282B28920061B8AA /* SimuladosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A481BFAB282B28920061B8AA /* SimuladosTableViewCell.xib */; };
+		A481BFB1282B2E020061B8AA /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481BFB0282B2E020061B8AA /* Arrays.swift */; };
+		A481BFB3282B316B0061B8AA /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481BFB2282B316B0061B8AA /* PopUpViewController.swift */; };
 		A4AABBAA281099E90049C20A /* PrimeiraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBA8281099E90049C20A /* PrimeiraTableViewCell.swift */; };
 		A4AABBAB281099E90049C20A /* PrimeiraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AABBA9281099E90049C20A /* PrimeiraTableViewCell.xib */; };
 		A4AABBAE28109CBC0049C20A /* PrimeiraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBAD28109CBC0049C20A /* PrimeiraTableViewController.swift */; };
@@ -31,6 +36,11 @@
 		4E3FA4D22800C9F0004A5402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ED779C9280F2CCE0032B178 /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
 		A481BFA4282AEBFD0061B8AA /* SimuladosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimuladosViewController.swift; sourceTree = "<group>"; };
+		A481BFA8282B21F10061B8AA /* QuestoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestoesViewController.swift; sourceTree = "<group>"; };
+		A481BFAA282B28920061B8AA /* SimuladosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimuladosTableViewCell.swift; sourceTree = "<group>"; };
+		A481BFAB282B28920061B8AA /* SimuladosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimuladosTableViewCell.xib; sourceTree = "<group>"; };
+		A481BFB0282B2E020061B8AA /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
+		A481BFB2282B316B0061B8AA /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		A4AABBA8281099E90049C20A /* PrimeiraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiraTableViewCell.swift; sourceTree = "<group>"; };
 		A4AABBA9281099E90049C20A /* PrimeiraTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrimeiraTableViewCell.xib; sourceTree = "<group>"; };
 		A4AABBAD28109CBC0049C20A /* PrimeiraTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiraTableViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +83,7 @@
 				4E3FA4CD2800C9F0004A5402 /* Assets.xcassets */,
 				4E3FA4CF2800C9F0004A5402 /* LaunchScreen.storyboard */,
 				4E3FA4D22800C9F0004A5402 /* Info.plist */,
+				A481BFB0282B2E020061B8AA /* Arrays.swift */,
 			);
 			path = Grupo07;
 			sourceTree = "<group>";
@@ -85,6 +96,9 @@
 				A4AABBA8281099E90049C20A /* PrimeiraTableViewCell.swift */,
 				A4AABBAD28109CBC0049C20A /* PrimeiraTableViewController.swift */,
 				A481BFA4282AEBFD0061B8AA /* SimuladosViewController.swift */,
+				A481BFAA282B28920061B8AA /* SimuladosTableViewCell.swift */,
+				A481BFA8282B21F10061B8AA /* QuestoesViewController.swift */,
+				A481BFB2282B316B0061B8AA /* PopUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -94,6 +108,7 @@
 			children = (
 				A4AABBA9281099E90049C20A /* PrimeiraTableViewCell.xib */,
 				4E3FA4CA2800C9ED004A5402 /* Main.storyboard */,
+				A481BFAB282B28920061B8AA /* SimuladosTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +174,7 @@
 				4E3FA4D12800C9F0004A5402 /* LaunchScreen.storyboard in Resources */,
 				4E3FA4CE2800C9F0004A5402 /* Assets.xcassets in Resources */,
 				A4AABBAB281099E90049C20A /* PrimeiraTableViewCell.xib in Resources */,
+				A481BFAD282B28920061B8AA /* SimuladosTableViewCell.xib in Resources */,
 				4E3FA4CC2800C9ED004A5402 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,12 +187,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED779CA280F2CCE0032B178 /* Pomodoro.swift in Sources */,
+				A481BFAC282B28920061B8AA /* SimuladosTableViewCell.swift in Sources */,
 				A4AABBAA281099E90049C20A /* PrimeiraTableViewCell.swift in Sources */,
+				A481BFB3282B316B0061B8AA /* PopUpViewController.swift in Sources */,
 				4E3FA4C92800C9ED004A5402 /* ViewController.swift in Sources */,
 				A481BFA5282AEBFD0061B8AA /* SimuladosViewController.swift in Sources */,
 				4E3FA4C52800C9ED004A5402 /* AppDelegate.swift in Sources */,
 				A4AABBAE28109CBC0049C20A /* PrimeiraTableViewController.swift in Sources */,
 				4E3FA4C72800C9ED004A5402 /* SceneDelegate.swift in Sources */,
+				A481BFA9282B21F10061B8AA /* QuestoesViewController.swift in Sources */,
+				A481BFB1282B2E020061B8AA /* Arrays.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
