@@ -45,7 +45,7 @@ extension SimuladosViewController: UITableViewDelegate, UITableViewDataSource{
         
         cell.acertouLabel.text = String(acertou[indexPath.row])
         cell.resolveuLabel.text = String(resolveu[indexPath.row])
-        cell.dataLabel.text = "Data: \(dataSimulados[indexPath.row])"
+        cell.dataLabel.text = "\(dataSimulados[indexPath.row])"
         cell.dataLabel.sizeToFit()
         
         return cell

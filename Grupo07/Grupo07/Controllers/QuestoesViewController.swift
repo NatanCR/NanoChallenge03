@@ -33,50 +33,91 @@ class QuestoesViewController: UIViewController {
     
     @IBAction func DoneButtom(_ sender: UIBarButtonItem) {
         
-        let resolveuInt = Int (resolveuField.text!)!
-        let acertouInt = Int (acertouField.text!)!
-        
-        if (resolveuInt) > (acertouInt){
-            
-            resolveu.append(resolveuInt)
-            acertou.append(acertouInt)
-            dataSimulados.append(dateFormatter.string(from: date))
-            
-            if (storyboard?.instantiateViewController(withIdentifier: "SimuladosViewController") as? SimuladosViewController) != nil {
+        let resolveuInt = Int (resolveuField.text!)
+        let acertouInt = Int (acertouField.text!)
 
-                    self.navigationController?.popViewController(animated: true)
+        if Int(resolveuInt ?? 0) > Int(acertouInt ?? 0){ // If principal
 
-                }
+            
+            if Int(acertouInt ?? 0) > 0{
+
+                
+                let resolveuInt = Int (resolveuField.text!)
+                let acertouInt = Int (acertouField.text!)
+                
+                resolveu.append(resolveuInt!)
+                acertou.append(acertouInt!)
+                dataSimulados.append(dateFormatter.string(from: date))
+
+                if (storyboard?.instantiateViewController(withIdentifier: "SimuladosViewController") as? SimuladosViewController) != nil {
+
+                        self.navigationController?.popViewController(animated: true)
+
+                    }
+                
+            }
+            
+            else if Int(resolveuInt!) > 0{
+                
+                let alerta = UIAlertController(title: nil, message: "Insira o número de questões acertadas.", preferredStyle: .alert)
+                alerta.addAction(UIAlertAction(title: "OK", style: .default, handler: {[weak self](_)in }))
+                present(alerta, animated: true, completion: nil)
+                
+                let resolveuInt = Int (resolveuField.text!)
+                let acertouInt = Int (acertouField.text!)
+
+            }
+            
+            
         }
         
-        else if (resolveuInt) < (acertouInt){
+        else if Int(resolveuInt ?? 0) < Int(acertouInt ?? 0){
+            
             let alerta = UIAlertController(title: nil, message: "O número de questões acertadas não pode ser maior que as resolvidas!", preferredStyle: .alert)
             alerta.addAction(UIAlertAction(title: "OK", style: .default, handler: {[weak self](_)in }))
             present(alerta, animated: true, completion: nil)
-            print("aqui")
+            
+            
         }
+    
         
         else if (resolveuInt) == (acertouInt){
             
-            resolveu.append(resolveuInt)
-            acertou.append(acertouInt)
-            dataSimulados.append(dateFormatter.string(from: date))
-            
-            
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "PopUpViewController") as? PopUpViewController{
-                vc.modalPresentationStyle = .overFullScreen
-                self.present(vc, animated: true)
-            
+            if resolveuField.text == ""{
+               
+                let alerta = UIAlertController(title: nil, message: "Por favor, preencha os campos.", preferredStyle: .alert)
+                alerta.addAction(UIAlertAction(title: "OK", style: .default, handler: {[weak self](_)in }))
+                present(alerta, animated: true, completion: nil)
+                print("aqui")
+                
             }
             
-            if (storyboard?.instantiateViewController(withIdentifier: "SimuladosViewController") as? SimuladosViewController) != nil {
-
-                    self.navigationController?.popViewController(animated: true)
-
-                }
             
-            resolveuField.text = ""
-            acertouField.text = ""
+                        
+            else{
+                
+                resolveu.append(resolveuInt!)
+                acertou.append(acertouInt!)
+                dataSimulados.append(dateFormatter.string(from: date))
+                
+                
+                if let vc = storyboard?.instantiateViewController(withIdentifier: "PopUpViewController") as? PopUpViewController{
+                    vc.modalPresentationStyle = .overFullScreen
+                    self.present(vc, animated: true)
+                
+                }
+                
+                if (storyboard?.instantiateViewController(withIdentifier: "SimuladosViewController") as? SimuladosViewController) != nil {
+
+                        self.navigationController?.popViewController(animated: true)
+
+                    }
+                
+                resolveuField.text = ""
+                acertouField.text = ""
+            }
+            
+           
                     
         }
         

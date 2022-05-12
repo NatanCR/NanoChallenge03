@@ -79,7 +79,7 @@
             </objects>
             <point key="canvasLocation" x="1762.3188405797102" y="-887.27678571428567"/>
         </scene>
-        <!--Pomodoro Table View Controller-->
+        <!--Pomodoro-->
         <scene sceneID="Tw1-am-Gnu">
             <objects>
                 <viewController storyboardIdentifier="PomodoroTableViewController" id="pou-xs-nmA" customClass="PomodoroTableViewController" customModule="Grupo07" customModuleProvider="target" sceneMemberID="viewController">
@@ -133,7 +133,7 @@
                             <constraint firstItem="g5W-fZ-8Mv" firstAttribute="leading" secondItem="9md-n1-Zza" secondAttribute="leading" id="m4w-Hr-K9S"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="gOG-Gf-Jyv"/>
+                    <navigationItem key="navigationItem" title="Pomodoro" id="gOG-Gf-Jyv"/>
                     <connections>
                         <outlet property="myTablePomodoro" destination="htq-bb-Wmc" id="9n6-u0-UuL"/>
                         <outlet property="pomodoroView" destination="QfG-Am-gIo" id="hjy-qe-8AY"/>
@@ -143,7 +143,7 @@
             </objects>
             <point key="canvasLocation" x="2565.217391304348" y="-887.27678571428567"/>
         </scene>
-        <!--Simulados-->
+        <!--Histórico-->
         <scene sceneID="1P3-mJ-YK2">
             <objects>
                 <viewController storyboardIdentifier="SimuladosViewController" id="Ryd-zx-GCB" customClass="SimuladosViewController" customModule="Grupo07" customModuleProvider="target" sceneMemberID="viewController">
@@ -208,7 +208,7 @@
                             <constraint firstItem="krW-eK-gVB" firstAttribute="trailing" secondItem="p9u-o6-Hs0" secondAttribute="trailing" constant="20" id="zvS-oJ-nDR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Simulados" id="Hdi-bS-B9n"/>
+                    <navigationItem key="navigationItem" title="Histórico" id="Hdi-bS-B9n"/>
                     <connections>
                         <outlet property="myTable" destination="21H-lU-3y6" id="jMa-yc-Y6C"/>
                         <outlet property="simuladosView" destination="p9u-o6-Hs0" id="hbZ-n8-Vdb"/>
@@ -374,7 +374,7 @@
             </objects>
             <point key="canvasLocation" x="2859" y="-1551"/>
         </scene>
-        <!--Pomodoro View Controller-->
+        <!--Pomodoro-->
         <scene sceneID="AjW-sw-y1J">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="PwF-en-8tP" customClass="PomodoroViewController" customModule="Grupo07" customModuleProvider="target" sceneMemberID="viewController">
@@ -447,7 +447,7 @@
                             <constraint firstItem="Me7-tQ-Pvs" firstAttribute="trailing" secondItem="oFr-eo-7sC" secondAttribute="trailing" id="ziU-aM-Nhu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="b3y-mY-fH9"/>
+                    <navigationItem key="navigationItem" title="Pomodoro" id="b3y-mY-fH9"/>
                     <connections>
                         <outlet property="cancelButton" destination="L9a-p4-ODq" id="afU-Mm-Wcr"/>
                         <outlet property="label" destination="DaZ-eK-586" id="gy9-64-cRR"/>
