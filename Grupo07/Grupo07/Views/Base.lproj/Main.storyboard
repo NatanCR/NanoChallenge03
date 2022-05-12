@@ -478,6 +478,7 @@
             <point key="canvasLocation" x="852.17391304347836" y="-887.27678571428567"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.0" green="0.41960784313725491" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <image name="background" width="414" height="896"/>
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
