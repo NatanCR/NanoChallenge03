@@ -64,7 +64,7 @@ class QuestoesViewController: UIViewController {
             
             
             if let vc = storyboard?.instantiateViewController(withIdentifier: "PopUpViewController") as? PopUpViewController{
-                vc.modalPresentationStyle = .popover
+                vc.modalPresentationStyle = .overFullScreen
                 self.present(vc, animated: true)
             
             }
