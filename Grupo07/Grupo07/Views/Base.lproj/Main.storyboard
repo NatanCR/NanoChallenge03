@@ -390,7 +390,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Cancel">
                                             <fontDescription key="titleFontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="20"/>
-                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                            <color key="baseForegroundColor" red="0.99607843137254903" green="0.3529411764705882" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="cancelButtonTapped:" destination="PwF-en-8tP" eventType="touchUpInside" id="cQH-nS-86r"/>
@@ -401,7 +401,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Start">
                                             <fontDescription key="titleFontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="20"/>
-                                            <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                            <color key="baseForegroundColor" red="0.4392156862745098" green="0.86274509803921573" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="startButtonTapped:" destination="PwF-en-8tP" eventType="touchUpInside" id="Okg-gW-dA8"/>
@@ -486,12 +486,6 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

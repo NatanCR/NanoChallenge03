@@ -49,7 +49,7 @@ class PomodoroViewController: UIViewController, CAAnimationDelegate {
     @IBAction func startButtonTapped(_ sender: Any) {
         cancelButton.isEnabled = true
         cancelButton.alpha = 1.0
-        cancelButton.setTitleColor(UIColor.red, for: .normal) //cor do botao cancelar
+        cancelButton.setTitleColor(UIColor.init(red: 0.996, green: 0.353, blue: 0.623, alpha: 1), for: .normal) //cor do botao cancelar
        
         
         if !pomodoro.isTimerStarted{ //logica para mostrar o botao de pause apos iniciar o timer
@@ -64,7 +64,7 @@ class PomodoroViewController: UIViewController, CAAnimationDelegate {
             pomodoro.timer.invalidate() //logica para mostrar o botao resume caso pause o timer
             pomodoro.isTimerStarted = false
             startButton.setTitle("Resume", for: .normal)
-            startButton.setTitleColor(UIColor.green, for: .normal)
+            startButton.setTitleColor(UIColor.init(red: 0.438, green: 0.863, blue: 0.659, alpha: 1), for: .normal)
         }
     }
 
@@ -74,7 +74,7 @@ class PomodoroViewController: UIViewController, CAAnimationDelegate {
         cancelButton.isEnabled = false //logica para mostrar o botao de start apos cancelar o timer
         cancelButton.alpha = 0.5
         startButton.setTitle("Start", for: .normal)
-        startButton.setTitleColor(UIColor.green, for: .normal)
+        startButton.setTitleColor(UIColor.init(red: 0.438, green: 0.863, blue: 0.659, alpha: 1), for: .normal)
         
         //faz o timer voltar ao inicio e contar 25 min novamente
         pomodoro.timer.invalidate()
@@ -93,7 +93,7 @@ class PomodoroViewController: UIViewController, CAAnimationDelegate {
             cancelButton.isEnabled = false
             cancelButton.alpha = 0.8
             startButton.setTitle("Start", for: .normal)
-            startButton.setTitleColor(UIColor.green, for: .normal)
+            startButton.setTitleColor(UIColor.init(red: 0.438, green: 0.863, blue: 0.659, alpha: 1), for: .normal)
             pomodoro.timer.invalidate()
             pomodoro.time = 5
             pomodoro.isTimerStarted = false
