@@ -31,6 +31,21 @@ class QuestoesViewController: UIViewController {
         
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        
+        resolveu = UserDefaults.standard.object(forKey: "resolveu") as! [Int]
+        acertou = UserDefaults.standard.object(forKey: "acertou") as! [Int]
+        dataSimulados = UserDefaults.standard.object(forKey: "data") as! [String]
+
+    }
+    
+    func saveData(){
+        
+        UserDefaults.standard.set(resolveu, forKey: "resolveu")
+        UserDefaults.standard.set(acertou, forKey: "acertou")
+        UserDefaults.standard.set(dataSimulados, forKey: "data")
+    }
+    
     @IBAction func DoneButtom(_ sender: UIBarButtonItem) {
         
         let resolveuInt = Int (resolveuField.text!)
@@ -48,6 +63,7 @@ class QuestoesViewController: UIViewController {
                 resolveu.append(resolveuInt!)
                 acertou.append(acertouInt!)
                 dataSimulados.append(dateFormatter.string(from: date))
+                saveData()
 
                 if (storyboard?.instantiateViewController(withIdentifier: "SimuladosViewController") as? SimuladosViewController) != nil {
 
@@ -99,6 +115,7 @@ class QuestoesViewController: UIViewController {
                 resolveu.append(resolveuInt!)
                 acertou.append(acertouInt!)
                 dataSimulados.append(dateFormatter.string(from: date))
+                saveData()
                 
                 
                 if let vc = storyboard?.instantiateViewController(withIdentifier: "PopUpViewController") as? PopUpViewController{

@@ -208,7 +208,19 @@
                             <constraint firstItem="krW-eK-gVB" firstAttribute="trailing" secondItem="p9u-o6-Hs0" secondAttribute="trailing" constant="20" id="zvS-oJ-nDR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Histórico" id="Hdi-bS-B9n"/>
+                    <navigationItem key="navigationItem" title="Histórico" id="Hdi-bS-B9n">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="3rF-Zn-jpL">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="3o3-YH-dru">
+                                <rect key="frame" x="327" y="88" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Limpar"/>
+                                <connections>
+                                    <action selector="LimparHistorico:" destination="Ryd-zx-GCB" eventType="touchUpInside" id="HgN-bm-r03"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="myTable" destination="21H-lU-3y6" id="jMa-yc-Y6C"/>
                         <outlet property="simuladosView" destination="p9u-o6-Hs0" id="hbZ-n8-Vdb"/>
