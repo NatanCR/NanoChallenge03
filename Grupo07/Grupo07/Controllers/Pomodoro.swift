@@ -19,7 +19,7 @@ let animation = CABasicAnimation(keyPath: "strokeEnd")
 var timer = Timer()
 var isTimerStarted = false
 var isAnimationStarted = false
-var time = 5
+var time = 1500
 var count = 0
 
 

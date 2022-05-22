@@ -78,7 +78,7 @@ class PomodoroViewController: UIViewController, CAAnimationDelegate {
         
         //faz o timer voltar ao inicio e contar 25 min novamente
         pomodoro.timer.invalidate()
-        pomodoro.time = 5
+        pomodoro.time = 1500
         pomodoro.isTimerStarted = false
         timeLabel.text = "25:00"
     
@@ -95,7 +95,7 @@ class PomodoroViewController: UIViewController, CAAnimationDelegate {
             startButton.setTitle("Start", for: .normal)
             startButton.setTitleColor(UIColor.init(red: 0.438, green: 0.863, blue: 0.659, alpha: 1), for: .normal)
             pomodoro.timer.invalidate()
-            pomodoro.time = 5
+            pomodoro.time = 1500
             pomodoro.isTimerStarted = false
             timeLabel.text = "25:00"
         }else{
@@ -125,7 +125,7 @@ class PomodoroViewController: UIViewController, CAAnimationDelegate {
         pomodoro.animation.keyPath = "strokeEnd"
         pomodoro.animation.fromValue = 0
         pomodoro.animation.toValue = 1
-        pomodoro.animation.duration = 5
+        pomodoro.animation.duration = 1500
         pomodoro.animation.delegate = self
         pomodoro.animation.isRemovedOnCompletion = false
         pomodoro.animation.isAdditive = true
