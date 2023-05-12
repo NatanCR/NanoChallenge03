@@ -1,4 +1,4 @@
-# Quimical
+# NanoChallenge03
  Quimical é um aplicativo criado com intuito de ajudar os alunos do ensino médio que estão se preparando para o exame do Enem. 
  Dentro do aplicativo o usuário encontra os conteúdos de química que mais aparecem no enem e dentro de cada conteúdo existe um timer inspirado na técnica do pomodoro. 
  
