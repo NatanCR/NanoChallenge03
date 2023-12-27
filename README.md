@@ -1,9 +1,8 @@
 # NanoChallenge03
- Quimical é um aplicativo criado com intuito de ajudar os alunos do ensino médio que estão se preparando para o exame do Enem. 
- Dentro do aplicativo o usuário encontra os conteúdos de química que mais aparecem no enem e dentro de cada conteúdo existe um timer inspirado na técnica do pomodoro. 
+Quimical is an application designed to help high school students who are preparing for the Enem exam. 
+Within the app, the user will find the chemistry content that appears most often in the Enem exam and within each content there is a timer inspired by the pomodoro technique. 
  
  
-Também é possível inserir os simulados do enem realizados pelo usuário, por fim o aplicativo retorna o histórico de simulados e de pomodoros realizados. 
-
+It is also possible to enter the Enem exams taken by the user, and finally the application returns the history of exams and pomodoros taken. 
 
 copyright © Aline Reis, Natan Camargo, Sarah Silva.
